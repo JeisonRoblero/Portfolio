@@ -1,0 +1,22 @@
+ErrorDocument 404 https://jeisonroblero.000webhostapp.com/404
+
+<IfModule mod_rewrite.c>
+RewriteEngine on
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+#RewriteRule ^(.*)$ $1.php
+RewriteRule ^([a-zA-Z0-9_-]+)/?$ $1.php [NC]
+
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+#RewriteRule ^(.*)$ $1.html
+RewriteRule ^([a-zA-Z0-9_-]+)/?$ $1.html [NC]
+
+</IfModule>
+
+
+
+
+

@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Inicio Meta Etiquetas para Redes Sociales y SEO -->
+    
+        <meta property="og:image" itemprop="image" content="assets/img/icon-og.png"/>
+        <meta property="og:image:secure_url" itemprop="image" content="https://jeisonroblero.ga/assets/img/icon-og.png"/> 
+
+        <meta property="og:site_name" content="Jeison Roblero's Portfolio | Web Developer"/>
+        <meta property="og:title" content="Jeison Roblero's Portfolio | Web Developer"/>
+        <meta property="og:description" content="Frontend and Backend Developer. Systems Engineering Student | Portfolio | Recent Works"/>
+        <meta property="og:url" content="https://jeisonroblero.ga/"/>
+        <meta property="og:type" content="website"/>
+
+        
+        <meta name="description" content="Frontend and Backend Developer. Systems Engineering Student | Portfolio | Recent Works">
+
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="Jeison Roblero's Portfolio | Web Developer">
+        <meta name="twitter:description" content="Frontend and Backend Developer. Systems Engineering Student | Portfolio | Recent Works">
+        <meta name="twitter:creator" content="@jeisonroblero.ga">
+        <meta name="twitter:image" content="https://jeisonroblero.ga/assets/img/icon-og.png">
+
+        <!-- Schema.org para Google+ -->
+        <meta itemprop="name" content="Jeison Roblero's Portfolio | Web Developer">
+        <meta itemprop="description" content="Frontend and Backend Developer. Systems Engineering Student | Portfolio | Recent Works">
+        <meta itemprop="image" content="https://jeisonroblero.ga/assets/img/icon-og.png">
+        
+        <!-- Fin Meta Etiquetas para Redes Sociales y SEO -->
+
+        <!--=============== PWA ===============-->
+        <!-- #0B111E -->
+        <meta name="theme-color" content=""/>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <link rel="apple-touch-icon" href="assets/img/favicon.png">
+        <link rel="apple-touch-startup-image" href="assets/img/favicon.png">
+        <link rel="manifest" href="./manifest.json">
+
+        <script src="./script.js"></script>
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+        <!--=============== BOXICONS ===============-->
+        <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+        <!--=============== SWIPER CSS ===============-->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title> Jeison Roblero Gálvez | Portfolio | Web Developer </title>
+
+
+        <style>
+            #ultimo + div {
+                visibility: hidden;
+            }
+            
+            .disclaimer {
+                visibility: hidden;
+            }
+        </style>
+
+    </head>
+    <body>
+        <!--=============== HEADER ===============-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav_logo">Jeison</a>
+
+                <a href="es/" class="lenguage">View in Spanish <img src="assets/img/guatemala.png" alt="Guatemala" width="25px" style="vertical-align: middle;"></a>
+
+                <div class="nav_menu">
+                    <ul class="nav_list">
+                        <li class="nav_item">
+                            <a href="#home" class="nav_link" title="Home">
+                                <i class='bx bx-home-alt'></i>
+                            </a>
+                        </li>
+
+                        <li class="nav_item">
+                            <a href="#about" class="nav_link" title="About">
+                                <i class='bx bx-user'></i>
+                            </a>
+                        </li>
+
+                        <li class="nav_item">
+                            <a href="#skills" class="nav_link" title="Skills">
+                                <i class='bx bx-book'></i>
+                            </a>
+                        </li>
+
+                        <li class="nav_item">
+                            <a href="#work" class="nav_link" title="Portfolio">
+                                <i class='bx bx-briefcase-alt-2'></i>
+                            </a>
+                        </li>
+
+                        <li class="nav_item">
+                            <a href="#contact" class="nav_link" title="Contact">
+                                <i class='bx bx-message-square-detail'></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Theme change button -->
+                <i class='bx bx-moon change-theme' id="theme-button"></i>
+            </nav>
+        </header>
+
+        <!--=============== MAIN ===============-->
+        <main class="main">
+
+            <audio id="myClick">
+                <source src="./assets/music/click.mp3">
+            </audio>
+
+            <!--=============== HOME ===============-->
+            <section class="home section" id="home">
+                <div class="home_container container grid">
+
+                    <!-- Music -->
+                    <div id="sound">
+                        <audio id="myAudio">
+                            <source src="./assets/music/Night.mp3">
+                        </audio>
+                        <i class="fab fa-soundcloud sound-cloud"></i>
+                        <span><i class='bx bx-music bx-tada' ></i> <b class="sound-word"> Sound </b></span>
+                        <div class="on-off">
+                            <span id="off">OFF</span>
+                            <span id="on">On</span>
+                        </div>
+                    </div>
+
+                    <div class="home_data">
+                        <span class="home_greeting">Hello, I'm</span>
+                        <h1 class="home_name">Jeison Roblero</h1>
+                        <h3 class="home_education">Frontend and Backend Developer <br>
+                            <span class="home_text">Systems Engineering Student.. <span class="home_cursor">&#160;</span> </span>
+                        </h3>
+                        
+
+
+
+                        <div class="home-buttons">
+                            <a href="assets/pdf/Jeison-Cv-En.pdf" target="_blank" class="button button--ghost">
+                                Download CV
+                            </a>
+                            <a href="#about" class="button" onclick="clickSound()">About me</a>
+                        </div>
+                    </div>
+
+                    <div class="home_handle">
+                        <img src="assets/img/perfil01.png" alt="Perfil" loading="lazy" class="home_img">
+                    </div>
+
+                    <div class="home_social">
+                        <a href="https://www.linkedin.com/in/JeisonRoblero" target="_blank" title="LinkedIn" class="home_social-link">
+                            <i class='bx bxl-linkedin-square'></i>
+                        </a>
+                        <a href="https://www.github.com/JeisonRoblero" target="_blank" title="GitHub" class="home_social-link">
+                            <i class='bx bxl-github' ></i>
+                        </a>
+                        <a href="https://codepen.io/JeisonRoblero" target="_blank" title="CodePen" class="home_social-link">
+                            <i class='bx bxl-codepen'></i>
+                        </a>
+                    </div>
+
+                    <a href="#contact" class="home_scroll">
+                        <i class='bx bx-mouse home_scroll-icon'></i>
+                        <span class="home_scroll-name">Scroll Down</span>
+                    </a>
+                </div>
+            </section>
+            
+            <!--=============== ABOUT ===============-->
+            <section class="about section" id="about">
+                <span class="section_subtitle animate-bottom">My Intro</span>
+                <h2 class="section_title animate-bottom">About Me</h2>
+
+                <div class="about_container container grid">
+                    <img src="assets/img/Perfil.jpg" alt="Perfil" loading="lazy" class="about_img animate-bottom">
+
+                    <div class="about_data">
+                        <div class="about_info">
+                            <div class="about_box animate-bottom">
+                                <i class='bx bx-award about_icon'></i>
+                                <h3 class="about_title">College</h3>
+                                <span class="about_subtitle">7 Semesters Completed</span>
+                            </div>
+
+                            <div class="about_box animate-bottom">
+                                <i class='bx bx-briefcase-alt about_icon' ></i>
+                                <h3 class="about_title">Completed</h3>
+                                <span class="about_subtitle">5 + Projects</span>
+                            </div>
+
+                            <div class="about_box animate-bottom">
+                                <i class='bx bx-support about_icon' ></i>
+                                <h3 class="about_title">Support</h3>
+                                <span class="about_subtitle">Online 24/7</span>
+                            </div>
+                        </div>
+
+                        <p class="about_description animate-bottom">
+                            Frontend and Backend developer, I create web pages with UI / UX user interface,
+                            full responsive, user-friendly and feature-rich websites. 
+                            I implement functionalities in the backend always following good programming practices.
+                        </p>
+
+                        <a href="#contact" class="button animate-bottom" onclick="clickSound()">Contact Me</a>
+                    </div>
+                </div>
+            </section>
+
+            <!--=============== SKILLS ===============-->
+            <section class="skills section" id="skills">
+                <span class="section_subtitle animate-bottom">My Abilities</span>
+                <h2 class="section_title animate-bottom">My Experience</h2>
+
+                <div class="skills_container container grid">
+                    <div class="skills_content animate-bottom">
+                        <h3 class="skills_title">Frontend Developer</h3>
+
+                        <div class="skills_box">
+                            <div class="skills_group">
+                                <div class="skills_data animate-right">
+                                    <i class='bx bxs-badge-check'></i>
+
+                                    <div>
+                                        <h3 class="skills_name">HTML <i class='bx bxl-html5' style="color: #F16524; font-size: 20px; vertical-align: text-top;"></i></h3>
+                                        <span class="skills_level">Advanced</span>
+                                    </div>
+                                </div>
+
+                                <div class="skills_data animate-right">
+                                    <i class='bx bxs-badge-check'></i>
+
+                                    <div>
+                                        <h3 class="skills_name">CSS <i class='bx bxl-css3' style="color: #2965F1; font-size: 20px; vertical-align:text-top;"></i></h3>
+                                        <span class="skills_level">Intermediate - Advanced</span>
+                                    </div>
+                                </div>
+
+                                <div class="skills_data animate-right">
+                                    <i class='bx bxs-badge-check'></i>
+
+                                    <div>
+                                        <h3 class="skills_name">JavaScript <i class='bx bxl-javascript' style="color: #F7E018; font-size: 20px; vertical-align:text-top;"></i></h3>
+                                        <span class="skills_level">Intermediate</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skills_group">
+                                <div class="skills_data animate-right">
+                                    <i class='bx bxs-badge-check'></i>
+
+                                    <div>
+                                        <h3 class="skills_name">Bootstrap <i class='bx bxl-bootstrap' style="color: #8311FA; font-size: 20px; vertical-align:text-top;"></i></h3>
+                                        <span class="skills_level">Intermediate</span>
+                                    </div>
+                                </div>
+
+                                <div class="skills_data animate-right">
+                                    <i class='bx bxs-badge-check'></i>
+
+                                    <div>
+                                        <h3 class="skills_name">Materialize <img src="assets/img/materialize-icon.png" loading="lazy" alt="Materialize Icon" width="20px" style="vertical-align:text-top"></h3>
+                                        <span class="skills_level">Intermediate</span>
+                                    </div>
+                                </div>
+
+                                <div class="skills_data animate-right">
+                                    <i class='bx bxs-badge-check'></i>
+
+                                    <div>
+                                        <h3 class="skills_name">Git <i class='bx bxl-git' style="color: #F05033; font-size: 20px; vertical-align:text-top;"></i></h3>
+                                        <span class="skills_level">Basic</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills_content animate-bottom">
+                        <h3 class="skills_title">Backend Developer</h3>
+
+                        <div class="skills_box">
+                            <div class="skills_group">
+                                <div class="skills_data animate-right">
+                                    <i class='bx bxs-badge-check'></i>
+
+                                    <div>
+                                        <h3 class="skills_name">PHP <i class='bx bxl-php' style="color: #787CB4; font-size: 25px; vertical-align:text-top;"></i></h3>
+                                        <span class="skills_level">Intermediate</span>
+                                    </div>
+                                </div>
+
+                                <div class="skills_data animate-right">
+                                    <i class='bx bxs-badge-check'></i>
+
+                                    <div>
+                                        <h3 class="skills_name">Java <i class='bx bxl-java' style="color: #0D8AC7; font-size: 25px; vertical-align:text-top;"></i> </h3>
+                                        <span class="skills_level">Intermediate</span>
+                                    </div>
+                                </div>
+
+                                <div class="skills_data animate-right">
+                                    <i class='bx bxs-badge-check'></i>
+
+                                    <div>
+                                        <h3 class="skills_name">C++ <i class='bx bxl-c-plus-plus' style="color: #004283; font-size: 25px; vertical-align:text-top;"></i></h3>
+                                        <span class="skills_level">Intermediate</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skills_group">
+                                <div class="skills_data animate-right">
+                                    <i class='bx bxs-badge-check'></i>
+
+                                    <div>
+                                        <h3 class="skills_name">MySQL <img src="assets/img/mysql-logo.png" loading="lazy" alt="MySQL Icon" width="20px" style="vertical-align:text-top"></h3>
+                                        <span class="skills_level">Intermediate</span>
+                                    </div>
+                                </div>
+
+                                <div class="skills_data animate-right">
+                                    <i class='bx bxs-badge-check'></i>
+
+                                    <div>
+                                        <h3 class="skills_name">PostgreSQL <img src="assets/img/postgress-icon.png" loading="lazy" alt="PostgreSQL Icon" width="20px" style="vertical-align:text-top"></h3>
+                                        <span class="skills_level">Basic</span>
+                                    </div>
+                                </div>
+
+                                <div class="skills_data animate-right">
+                                    <i class='bx bxs-badge-check'></i>
+
+                                    <div>
+                                        <h3 class="skills_name">.NET <img src="assets/img/net-icon.png" loading="lazy" alt=".NET Icon" width="20px" style="vertical-align:text-top"></h3>
+                                        <span class="skills_level">Basic</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--=============== SERVICES ===============-->
+            <section class="services section">
+                <span class="section_subtitle animate-bottom">My Services</span>
+                <h2 class="section_title animate-bottom">What I Offer</h2>
+
+                <div class="services_container container grid">
+                    <div class="services_card ">
+                        <h3 class="services_title">Frontend <br>  Design</h3>
+
+                        <span class="services_button">
+                            See more <i class='bx bx-right-arrow-alt services_icon'></i>
+                        </span>
+
+                        <div class="services_modal">
+                            <div class="services_modal-content">
+                                <i class='bx bx-x services_modal-close' ></i>
+
+                                <h3 class="services_modal-title">Frontend Design</h3>
+                                <p class="services_modal-description">
+                                    Providing quality work to clients and companies.
+                                </p>
+
+                                <ul class="services_modal-list">
+                                    <li class="services_modal-item">
+                                        <i class='bx bx-check services_modal-icon'></i>
+
+                                        <p class="services_modal-info">
+                                            User interface development.
+                                        </p>
+                                    </li>
+                                    
+                                    <li class="services_modal-item">
+                                        <i class='bx bx-check services_modal-icon'></i>
+
+                                        <p class="services_modal-info">
+                                            Creating ux element interactions.
+                                        </p>
+                                    </li>
+
+                                    <li class="services_modal-item">
+                                        <i class='bx bx-check services_modal-icon'></i>
+
+                                        <p class="services_modal-info">
+                                            Beautiful designs for launch pages.
+                                        </p>
+                                    </li>
+
+                                    <li class="services_modal-item">
+                                        <i class='bx bx-check services_modal-icon'></i>
+
+                                        <p class="services_modal-info">
+                                            Basic load time optimization.
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="services_card ">
+                        <h3 class="services_title">Backend <br> Programming</h3>
+
+                        <span class="services_button">
+                            See more <i class='bx bx-right-arrow-alt services_icon'></i>
+                        </span>
+
+                        <div class="services_modal">
+                            <div class="services_modal-content">
+                                <i class='bx bx-x services_modal-close' ></i>
+
+                                <h3 class="services_modal-title">Backend Programming</h3>
+                                <p class="services_modal-description">
+                                    Use of good programming practices when implementing the required functionalities.
+                                </p>
+
+                                <ul class="services_modal-list">
+                                    <li class="services_modal-item">
+                                        <i class='bx bx-check services_modal-icon'></i>
+
+                                        <p class="services_modal-info">
+                                            Project scalability.
+                                        </p>
+                                    </li>
+
+                                    <li class="services_modal-item">
+                                        <i class='bx bx-check services_modal-icon'></i>
+
+                                        <p class="services_modal-info">
+                                            Database connection.
+                                        </p>
+                                    </li>
+                                    
+                                    <li class="services_modal-item">
+                                        <i class='bx bx-check services_modal-icon'></i>
+
+                                        <p class="services_modal-info">
+                                            Login systems.
+                                        </p>
+                                    </li>
+
+                                    <li class="services_modal-item">
+                                        <i class='bx bx-check services_modal-icon'></i>
+
+                                        <p class="services_modal-info">
+                                            Basic security principles.
+                                        </p>
+                                    </li>
+
+                                    <li class="services_modal-item">
+                                        <i class='bx bx-check services_modal-icon'></i>
+
+                                        <p class="services_modal-info">
+                                            Among other implementations in the backend.
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="services_card ">
+                        <h3 class="services_title">Website <br> Publishing</h3>
+
+                        <span class="services_button">
+                            See more <i class='bx bx-right-arrow-alt services_icon'></i>
+                        </span>
+
+                        <div class="services_modal">
+                            <div class="services_modal-content">
+                                <i class='bx bx-x services_modal-close' ></i>
+
+                                <h3 class="services_modal-title">Website Publishing</h3>
+                                <p class="services_modal-description">
+                                    The entire process of publishing the website on the Internet.
+                                </p>
+
+                                <ul class="services_modal-list">
+                                    <li class="services_modal-item">
+                                        <i class='bx bx-check services_modal-icon'></i>
+
+                                        <p class="services_modal-info">
+                                            Website hosting.
+                                        </p>
+                                    </li>
+
+                                    <li class="services_modal-item">
+                                        <i class='bx bx-check services_modal-icon'></i>
+
+                                        <p class="services_modal-info">
+                                            Domain configuration, example.com
+                                        </p>
+                                    </li>
+                                    
+                                    <li class="services_modal-item">
+                                        <i class='bx bx-check services_modal-icon'></i>
+
+                                        <p class="services_modal-info">
+                                            Basic DNS configuration.
+                                        </p>
+                                    </li>
+
+                                    <li class="services_modal-item">
+                                        <i class='bx bx-check services_modal-icon'></i>
+
+                                        <p class="services_modal-info">
+                                            Presence on Google and Bing.
+                                        </p>
+                                    </li>
+
+                                    <li class="services_modal-item">
+                                        <i class='bx bx-check services_modal-icon'></i>
+
+                                        <p class="services_modal-info">
+                                            Basic SEO optimization.
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--=============== WORK ===============-->
+            <section class="work section" id="work">
+                <span class="section_subtitle animate-bottom">My Portfolio</span>
+                <h2 class="section_title animate-bottom">Recent Works</h2>
+
+                <div class="work_filters animate-bottom">
+                    <span class="work_item active-work" data-filter='.all'>All</span>
+                    <span class="work_item" data-filter='.web'>Web</span>
+                    <span class="work_item" data-filter='.pwa'>PWA</span>
+                    <span class="work_item" data-filter='.codepen'>CodePen</span>
+                </div>
+
+                <div class="work_container container grid">
+                    
+                    <div class="work_card mix web all animate-bottom">
+                        <!-- <img src="assets/img/amazingstore-1.png" loading="lazy" alt="Work 1" class="work_img"> -->
+
+                        <video src="assets/videos/ieaenglish.mkv" poster="assets/img/ieaenglish-1.png" class="work_img" muted loading="lazy" loop onmouseover="this.play();" onmouseout="this.pause();"></video>
+
+                        <h3 class="work_title">IEA English Academy - Web</h3>
+                        <p class="work_description">IEA English Academy is a 
+                            website for an online academy focused on the sale 
+                            of digital courses, written in html, css and 
+                            javascript as frontend. The website provides all 
+                            the necessary functionalities for the online course 
+                            purchase process.
+                        </p>
+
+                        <a href="https://jeisonroblero.github.io/EnglishAcademy/" target="_blank" class="work_button">
+                            Demo <i class='bx bx-right-arrow-alt work_icon'></i>
+                        </a>
+                    </div>
+                    
+                    <div class="work_card mix web pwa all animate-bottom">
+                        <!-- <img src="assets/img/amazingstore-1.png" loading="lazy" alt="Work 1" class="work_img"> -->
+
+                        <video src="assets/videos/amazing-1.mp4" class="work_img" poster="assets/img/amazing-thumb.png" muted loading="lazy" loop onmouseover="this.play();" onmouseout="this.pause();"></video>
+
+                        <h3 class="work_title">Amazing Store - Web</h3>
+                        <p class="work_description">Amazing Store is an online 
+                            store focused on the sale of both physical and digital 
+                            products, written in php as a backend; html, css and 
+                            javascript as frontend. The website provides all the 
+                            necessary functionalities for the product purchase process, 
+                            it also has a Progressive Web Application or PWA that can 
+                            be downloaded directly on the page.
+                        </p>
+
+                        <a href="https://amazingst.000webhostapp.com/" target="_blank" class="work_button">
+                            Demo <i class='bx bx-right-arrow-alt work_icon'></i>
+                        </a>
+                    </div>
+
+                    <div class="work_card mix web pwa all animate-bottom">
+                        <!-- <img src="assets/img/zeli-1.png" loading="lazy" alt="Work 1" class="work_img"> -->
+
+                        <video src="assets/videos/zeli-1.mp4" class="work_img" poster="assets/img/zeli-thumb.png" muted loading="lazy" loop onmouseover="this.play();" onmouseout="this.pause();"></video>
+
+                        <h3 class="work_title">ZeliTech - Web</h3>
+                        <p class="work_description">ZeliTech (new version) is an online store dedicated to the sale of video games, software keys, 
+                            among other things. It is focused on the sale of digital products, written in php as a backend; html, css and
+                            javascript as frontend. The website provides all the
+                            functionalities necessary for the product purchase process,
+                            also has a Progressive Web App or PWA that can
+                            be downloaded directly from the official page.</p>
+
+                        <a href="https://github.com/JeisonRoblero/ZeliTech" target="_blank" class="work_button">
+                            Demo <i class='bx bx-right-arrow-alt work_icon'></i>
+                        </a>
+                    </div>
+                    
+                    <div class="work_card mix web all animate-bottom">
+                        
+                        <img src="https://user-images.githubusercontent.com/89631773/228746500-1c849e21-fc6a-4036-9a16-0ef9f516f525.png" loading="lazy" alt="Work 1" class="work_img"> 
+                      
+                        <!-- <video src="assets/videos/ieaenglish.mkv" class="work_img" muted loading="lazy" loop onmouseover="this.play();" onmouseout="this.pause();"></video> -->
+
+                        <h3 class="work_title">Prime number adder interface</h3>
+                        <p class="work_description">Web application - Calculator that allows adding prime numbers starting from the number entered by the user.
+                        </p>
+
+                        <a href="https://jeisonroblero.000webhostapp.com/SumaPrimos/" target="_blank" class="work_button">
+                            Demo <i class='bx bx-right-arrow-alt work_icon'></i>
+                        </a>
+                    </div>
+                    
+                    <div class="work_card mix web all animate-bottom">
+                        <!-- <img src="assets/img/speech-1.png" loading="lazy" alt="Work 1" class="work_img"> -->
+
+                        <video src="assets/videos/speech-1.mp4" class="work_img" poster="assets/img/speech-1.png" muted loading="lazy" loop onmouseover="this.play();" onmouseout="this.pause();"></video>
+
+                        <h3 class="work_title">Speech Recognition - Web</h3>
+
+                        <p class="work_description">Personal assistant web 
+                            application designed to answer users' questions, 
+                            built with html, css and javascript. The default 
+                            language is Spanish.
+                        </p>
+
+
+                        <a href="https://jeisonroblero.github.io/SpeechRecognition/" target="_blank" class="work_button">
+                            Demo <i class='bx bx-right-arrow-alt work_icon'></i>
+                        </a>
+                    </div>
+
+                    <div class="work_card mix codepen all animate-bottom">
+                        <!-- <img src="assets/img/work1.jpg" loading="lazy" alt="Work 1" class="work_img"> -->
+                        <video src="assets/videos/scroll.mp4" class="work_img" poster="assets/img/scroll-nav.png" muted loading="lazy" loop onmouseover="this.play();" onmouseout="this.pause();"></video>
+
+                        <h3 class="work_title">Dynamic Navigation - CodePen</h3>
+                        <p class="work_description">Implementation of dynamic 
+                            navigation with a smooth slide, as we move the 
+                            navigation bar changes selection with its respective 
+                            color. Implemented with HTML, CSS, and JavaScript.
+                        </p>
+
+                        <a href="https://codepen.io/JeisonRoblero/pen/podjabK" target="_blank" class="work_button">
+                            Demo <i class='bx bx-right-arrow-alt work_icon'></i>
+                        </a>
+                    </div>
+
+                
+                </div>
+            </section>
+
+            <!--=============== TESTIMONIALS ===============-->
+            <section class="testimonial section" id="testimonial">
+                <span class="section_subtitle animate-bottom">What People Say</span>
+                <h2 class="section_title animate-bottom">Project Feedback</h2>
+
+                <div class="testimonial_container container swiper">
+                    <div class="swiper-wrapper">
+                        <div class="testimonial_card swiper-slide">
+                            <img src="assets/img/testimonial1.png" loading="lazy" alt="Testimonial 1" class="testimonial_img">
+
+                            <h3 class="testimonial_name">Jhon Doe</h3>
+                            <p class="testimonial_description">
+                                Excellent work. Our CTR
+                                has increased by appearing among the first
+                                search engine results.
+                            </p>
+                        </div>
+
+                        <div class="testimonial_card swiper-slide">
+                            <img src="assets/img/testimonial2.png" loading="lazy" alt="Testimonial 1" class="testimonial_img">
+
+                            <h3 class="testimonial_name">Paula Vusy</h3>
+                            <p class="testimonial_description">
+                                I really like the way he unites beautiful design with very effective functionality.
+                            </p>
+                        </div>
+
+                        <div class="testimonial_card swiper-slide">
+                            <img src="assets/img/testimonial3.png" loading="lazy" alt="Testimonial 1" class="testimonial_img">
+
+                            <h3 class="testimonial_name">Sara Cill</h3>
+                            <p class="testimonial_description">
+                                A really good job, all aspects of the project were 
+                                followed step by step and with good results.
+                            </p>
+                        </div>
+
+                        <div class="testimonial_card swiper-slide">
+                            <img src="assets/img/Josue.jpg" loading="lazy" alt="Testimonial 1" class="testimonial_img">
+
+                            <h3 class="testimonial_name">Josué</h3>
+                            <p class="testimonial_description">
+                                I love the layout and fluidity of the page. 
+                                Also the language change tool and the light 
+                                and dark mode to read comfortably. The projects 
+                                on the other pages are incredible. Excellent work!.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+
+            <!--=============== CONTACT ===============-->
+            <section class="contact section" id="contact">
+                <span class="section_subtitle animate-bottom">Get in touch</span>
+                <h2 class="section_title animate-bottom">Contact Me</h2>
+
+                <div class="contact_container container grid">
+                    <div class="contact_content">
+                        <h3 class="contact_title animate-bottom">Talk to me</h3>
+
+                        <div class="contact_info">
+                            <div class="contact_card animate-bottom">
+                                <i class='bx bx-mail-send contact_card-icon' ></i>
+                                <h3 class="contact_card-title">Email</h3>
+                                <span class="contact_card-data">contact@jeisonroblero.ga</span>
+
+                                <a href="mailto:contact@jeisonroblero.ga?subject=%F0%9F%91%8B%F0%9F%8F%BC%20Hey%2C%20let%27s%20work%20together!&body=Hey!%20I%20saw%20your%20portfolio%20online%20and%20I%20was%20hoping%20we%20could%20get%20in%20touch" target="_blank" class="contact_button">
+                                    Write me <i class='bx bx-right-arrow-alt contact_button-icon' ></i>
+                                </a>
+                            </div>
+
+                            <div class="contact_card animate-bottom">
+                                <i class='bx bxl-whatsapp contact_card-icon' ></i>
+                                <h3 class="contact_card-title">WhatsApp</h3>
+                                <span class="contact_card-data">+502-5898-2159</span>
+    
+                                <a href="https://api.whatsapp.com/send?phone=50258982159&text=Hi,%20I'm%20interested%20in%20working%20with%20you." target="_blank" class="contact_button">
+                                    Write me <i class='bx bx-right-arrow-alt contact_button-icon' ></i>
+                                </a>
+                            </div>
+    
+                            <div class="contact_card animate-bottom">
+                                <i class='bx bxl-messenger contact_card-icon' ></i>
+                                <h3 class="contact_card-title">Messenger</h3>
+                                <span class="contact_card-data">m.me/jeison.roblerogalvez</span>
+    
+                                <a href="https://m.me/jeison.roblerogalvez" target="_blank" class="contact_button">
+                                    Write me <i class='bx bx-right-arrow-alt contact_button-icon' ></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="contact_content">
+                        <h3 class="contact_title animate-bottom">Write me your project</h3>
+
+                        <form action="https://formspree.io/f/xvolkkkp" method="POST" class="contact_form">
+
+                            <input type="hidden" name="subject" value="Contacto | Alguien te contactó desde tu portafolio en www.jeisonroblero.ga">
+
+                            <div class="contact_form-div animate-bottom">
+                                <label for="" class="contact_form-tag">Names</label>
+                                <input type="text" name="name" required="" placeholder="Insert your name" class="contact_form-input">
+                            </div>
+
+                            <div class="contact_form-div animate-bottom">
+                                <label for="" class="contact_form-tag">Mail</label>
+                                <input type="email" name="_replyto" required="" placeholder="Insert your email" class="contact_form-input" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{2,5}">
+                            </div>
+
+                            <div class="contact_form-div contact_form-area animate-bottom">
+                                <label for="" class="contact_form-tag">Message</label>
+                                <textarea name="message" id="" cols="30" rows="10" placeholder="Write your message here" class="contact_form-input" required=""></textarea>
+                            </div>
+
+                            <button class="button animate-bottom" onclick="clickSound()">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--=============== FOOTER ===============-->
+        <footer class="footer">
+            <div class="footer_container container">
+                <h1 class="footer_title animate-bottom">Jeison Roblero</h1>
+
+                <ul class="footer_list">
+                    <li><a href="#about" class="footer_link animate-bottom">About</a></li>
+                    <li><a href="#work" class="footer_link animate-bottom">Projects</a></li>
+                    <li><a href="#testimonial" class="footer_link animate-bottom">Project Feedback</a></li>
+                </ul>
+
+                <ul class="footer_social">
+                    <a href="https://www.linkedin.com/in/JeisonRoblero/" target="_blank" title="LinkedIn" class="footer_social-link home_social-link animate-bottom">
+                        <i class='bx bxl-linkedin-square'></i>
+                    </a>
+
+                    <a href="https://www.github.com/JeisonRoblero" target="_blank" title="GitHub" class="footer_social-link home_social-link animate-bottom">
+                        <i class='bx bxl-github' ></i>
+                    </a>
+
+                    <a href="https://codepen.io/JeisonRoblero" target="_blank" title="CodePen" class="footer_social-link home_social-link animate-bottom">
+                        <i class='bx bxl-codepen'></i>
+                    </a>
+                </ul>
+
+                <span class="footer_copy animate-bottom">
+                    &#169; Jeison Roblero. All rigths reserved
+                </span>
+            </div>
+        </footer>
+
+        <!--=============== SCROLLREVEAL ===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+
+        <!--=============== SWIPER JS ===============-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+
+        <!--=============== MIXITUP FILTER ===============-->
+        <script src="assets/js/mixitup.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+
+
+        <div id="ultimo">
+	    
+        </div>
+    </body>
+</html>
